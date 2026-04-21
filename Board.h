@@ -22,6 +22,7 @@ struct Board {
 
     void draw(sf::RenderWindow& window); 
     void mouseClickHandle(int x, int y, bool leftClick);
+    void tileReveal(int r, int c);
 
 private:
     std::mt19937 rng;
