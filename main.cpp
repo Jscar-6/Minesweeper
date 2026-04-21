@@ -1,10 +1,10 @@
 #include <SFML/Graphics.hpp>
+#include <random>
 #include "TextureManager.h"
 #include "Board.h"
 
 
 int main(){
-    
     TextureManager textures;
     textures.loadAll();
 

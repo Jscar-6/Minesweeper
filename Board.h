@@ -1,4 +1,5 @@
 #pragma once
+#include <random>
 #include <vector>
 #include "Tile.h"
 #include "TextureManager.h"
@@ -16,9 +17,12 @@ struct Board {
 
     void reset();               
     void placeMines();          
-    void computeAdjacency();   
+    void findAdjacents();   
     void linkNeighbors();      
 
     void draw(sf::RenderWindow& window); 
     void mouseClickHandle(int x, int y, bool leftClick);
+
+private:
+    std::mt19937 rng;
 };
