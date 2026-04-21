@@ -27,6 +27,6 @@ void TextureManager::loadAll(){
     textureMap["test_3"].loadFromFile("images/test_3.png");
 };
 
-sf::Texture& TextureManager::getName(const string& name){
+sf::Texture& TextureManager::getTexture(const string& name){
     return textureMap[name];
 }
